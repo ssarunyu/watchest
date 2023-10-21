@@ -42,7 +42,6 @@ i {
     margin: 0 10px 0 0;
 }
 
-
 .movie-list {
     text-align: left;
 }
@@ -55,6 +54,8 @@ i {
     padding: 2rem;
     border-radius: 10px;
     background-color: white;
+    align-items: center;
+
 }
 
 /* Modal styles */
@@ -103,3 +104,40 @@ img#popUpImg {
     width: 40%;
 }
 
+@media screen and (max-width: 375px) {
+    .title h1 {
+        padding: 1rem;
+    }
+
+    .movie-item {
+        width: 300px;
+        padding: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .title h1 {
+        padding: 1rem;
+    }
+
+    .movie-item {
+        width: 350px;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .modal-content {
+        width: 70%;
+    }
+    .title h1 {
+        text-align: center;
+        padding: 1rem;
+        font-size: 28px;
+    }
+
+    .movie-item {
+        width: 450px;
+    }
+}
