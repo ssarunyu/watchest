@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="title">
+        <h1>My Top 3 longest series I've ever watched on Netflix</h1>
+    </div>
+
+    <!-- Use one button for both file input and loading -->
+    <label for="csvFileInput" id="loadCSV" class="csv-label">
+        <input type="file" id="csvFileInput" accept=".csv" class="csv-input" />
+        <i class="fa fa-cloud-upload"></i>Upload Your CSV File
+    </label>
+
+    <div id="movieList" class="movie-list">
+        <!-- Dynamic content will be added here -->
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h1 id="model-title">Welcome!</h1>
+            <p id="model-detail">First of all you need to get .csv file from this <a target="_blank" href="https://www.netflix.com/viewingactivity">Netflix Viewing Activity</a> <br>Scroll down to *Download all* and wait to get your file<br>
+                Almost whole code in this project coding by ChatGPT💀<br>Enjoy let's watch what series is in your top 3!
+            </p>
+            <img id="popUpImg" src="popupPic.jpeg" alt="Image Description">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
