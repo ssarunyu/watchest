@@ -122,8 +122,9 @@ img#popUpImg {
     }
 
     .movie-item {
-        width: 350px;
-        padding: 1.5rem;
+        font-size: 14px;
+        max-width: 340px;
+        padding: 1.3rem;
     }
 }
 
